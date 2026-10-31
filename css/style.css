@@ -1,0 +1,220 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+:root {
+  --primary-bg: rgba(255, 255, 255, 1);
+  --primary-text: rgba(255, 255, 255, 1);
+  --secondary-bg: rgba(47, 79, 79, 1);
+  --secondary-text: rgba(47, 79, 79, 1);
+  --primary-btn: rgba(96, 161, 160, 1);
+  --primary-btn-hover: rgba(96, 161, 160, 0.85);
+  --btn-hover: rgba(96, 161, 160, 0.45);
+  --secondary-btn: rgba(255, 255, 255, 1);
+  --secondary-btn-hover: rgba(247, 245, 239, 1);
+}
+[class*="__container"] {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  color: inherit;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4c4c4c;
+  background: #fff;
+}
+
+.hero__wrapper {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bg-hero.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.header {
+  color: var(--primary-text);
+  text-transform: uppercase;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 0;
+  gap: 20px;
+}
+.header__logo {
+}
+.logo__img {
+}
+.header__menu {
+}
+.menu-nav {
+}
+.menu-nav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 12px 0;
+}
+.menu-nav__item {
+}
+.menu-nav__link {
+}
+.header__contact {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.pnone__btn-link {
+  padding: 14px;
+  border-radius: 4px;
+  background: var(--btn-hover);
+}
+.pnone__btn-link:hover {
+  background: var(--primary-btn);
+}
+.phone__btn-img {
+}
+.header__btn {
+}
+.btn__link {
+  background: var(--primary-btn);
+  padding: 16px 25px;
+  border-radius: 4px;
+}
+.btn__link:hover {
+  background: var(--btn-hover);
+}
+.main {
+}
+.hero__main-text {
+  display: flex;
+  padding-top: 150px;
+  text-align: center;
+  color: var(--primary-text);
+  flex-direction: column;
+}
+.hero__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+.hero__title:not(:last-child) {
+  margin-bottom: 48px;
+}
+.hero__text {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 4.8px;
+}
+.hero__text:not(:last-child) {
+  margin-bottom: 140px;
+}
+.hero__btn-link {
+  margin-bottom: 78px;
+}
+.btn-link {
+  color: var(--primary-bg);
+  background: var(--btn-hover);
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  font-weight: 300;
+}
+.btn-link span {
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.btn-link:hover {
+  background: var(--primary-btn);
+}
+.btn-link:hover span {
+  transform: translateY(10%) rotate(90deg);
+}
+.personal {
+}
+
+.personal__inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+  margin-bottom: 150px;
+}
+.personal__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 43px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--secondary-text);
+  margin-bottom: 100px;
+  position: relative;
+}
+.personal__title::before {
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 10px;
+  top: calc(100% + 34px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--secondary-text);
+}
+.pers__txt-box {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 56px;
+  margin-bottom: 60px;
+}
+.pers__text {
+  max-width: 484px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.pers__btn {
+  display: flex;
+  align-items: center;
+  column-gap: 56px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+.pers__link-btn {
+  background: var(--primary-btn);
+  padding: 16px 25px;
+  border-radius: 4px;
+  color: var(--secondary-btn);
+}
+.pers__link {
+  padding: 16px 25px;
+  background: transparent;
+}
