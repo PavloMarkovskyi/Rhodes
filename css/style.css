@@ -7,6 +7,7 @@ html {
   box-sizing: inherit;
 }
 :root {
+  --body-font-color: #4c4c4c;
   --primary-bg: rgba(255, 255, 255, 1);
   --primary-text: rgba(255, 255, 255, 1);
   --secondary-bg: rgba(47, 79, 79, 1);
@@ -36,7 +37,7 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #4c4c4c;
+  color: var(--body-font-color);
   background: #fff;
 }
 
@@ -209,12 +210,22 @@ body {
   text-transform: uppercase;
 }
 .pers__link-btn {
-  background: var(--primary-btn);
-  padding: 16px 25px;
-  border-radius: 4px;
   color: var(--secondary-btn);
+}
+.pers__link-btn:hover {
+  color: var(--body-font-color);
 }
 .pers__link {
   padding: 16px 25px;
   background: transparent;
+}
+.pers__link span {
+  padding-bottom: 4px;
+  background: linear-gradient(currentColor, currentColor) no-repeat right
+    bottom / 0 2px;
+  transition: background-size 0.35s ease;
+}
+.pers__link:hover span {
+  background-size: 100% 2px;
+  background-position: left bottom;
 }
