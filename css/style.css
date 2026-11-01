@@ -229,3 +229,23 @@ body {
   background-size: 100% 2px;
   background-position: left bottom;
 }
+.section-img__btn {
+  width: 100%;
+  aspect-ratio: 1440 / 875;
+  background: url(../img/image-btn.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img__btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--secondary-btn);
+}
