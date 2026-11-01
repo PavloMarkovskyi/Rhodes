@@ -248,4 +248,8 @@ body {
   letter-spacing: 1.6px;
   text-transform: uppercase;
   color: var(--secondary-btn);
+  background: var(--btn-hover);
+}
+.img__btn:hover {
+  background: var(--primary-btn);
 }
