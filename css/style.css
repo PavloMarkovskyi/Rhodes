@@ -36,7 +36,7 @@ li {
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--body-font-color);
   background: #fff;
 }
@@ -170,7 +170,8 @@ body {
 }
 .personal__title {
   font-family: "DM Serif Display", serif;
-  font-size: 43px;
+  text-align: center;
+  font-size: clamp(24px, 18px + 1.75vw, 44px);
   line-height: 1.2;
   font-weight: 400;
   color: var(--secondary-text);
@@ -232,7 +233,9 @@ body {
 .section-img__btn {
   width: 100%;
   aspect-ratio: 1440 / 875;
-  background: url(../img/image-btn.webp);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/image-btn.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -252,4 +255,79 @@ body {
 }
 .img__btn:hover {
   background: var(--primary-btn);
+}
+.services {
+  background: var(--secondary-bg);
+  color: var(--primary-text);
+  padding-top: 150px;
+}
+.services__container {
+}
+.services__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services__title {
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  font-size: clamp(24px, 18px + 1.75vw, 44px);
+  line-height: 1.2;
+  font-weight: 400;
+  color: var(--primary-text);
+  margin-bottom: 100px;
+  text-wrap: balance;
+  position: relative;
+}
+.services__title::before {
+  content: "";
+  position: absolute;
+  width: 51px;
+  height: 10px;
+  top: calc(100% + 34px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-text);
+}
+.travel__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 84px;
+  max-width: 1024px;
+  margin-bottom: 150px;
+}
+.travel__card {
+  position: relative;
+}
+.travel__info {
+  max-width: 340px;
+}
+
+.travel__card:first-child .travel__info {
+  position: absolute;
+  left: -90px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.travel__card:last-child .travel__info {
+  position: absolute;
+  top: 50%;
+  right: -90px;
+  transform: translateY(-50%);
+  z-index: 2;
+  text-align: right;
+}
+.travel-card__img {
+}
+.travel-card__img img {
+}
+.travel__title {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(24px, 4vw, 64px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.travel__text {
+  line-height: 1.4;
 }
